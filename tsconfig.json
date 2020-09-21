@@ -22,7 +22,7 @@
     "allowSyntheticDefaultImports": true,
     "suppressImplicitAnyIndexErrors": true,
     "forceConsistentCasingInFileNames": true,
-    "lib": ["ES6", "ES2016", "ES2020"],
+    "lib": ["DOM", "ES6", "ES2016", "ES2020"],
     "paths": {
       "@web/*": ["packages/*/src"]
     }
