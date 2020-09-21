@@ -1,2 +1,3 @@
-# packages
-Packages used in the development of Kael.
+# web
+
+Kael applications on the web.
