@@ -1,0 +1,9 @@
+{
+  "name": "@client/dashboard",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "directory": "packages/dashboard",
+    "url": "git+https://github.com/kaeltec/web.git"
+  }
+}

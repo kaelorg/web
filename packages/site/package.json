@@ -1,0 +1,9 @@
+{
+  "name": "@web/site",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "directory": "packages/site",
+    "url": "git+https://github.com/kaeltec/web.git"
+  }
+}
