@@ -1,0 +1,29 @@
+/fonts/*
+  cache-control: public
+  cache-control: max-age=2592000
+  cache-control: must-revalidate
+
+/icons/*
+  cache-control: public
+  cache-control: max-age=2592000
+  cache-control: must-revalidate
+
+/static/images/*
+  cache-control: public
+  cache-control: max-age=14400
+  cache-control: must-revalidate
+
+/static/logo.png
+  cache-control: public
+  cache-control: max-age=2592000
+  cache-control: must-revalidate
+
+/static/logo_grey.png
+  cache-control: public
+  cache-control: max-age=2592000
+  cache-control: must-revalidate
+
+/static/logo_square
+  cache-control: public
+  cache-control: max-age=2592000
+  cache-control: must-revalidate

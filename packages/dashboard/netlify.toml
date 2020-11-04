@@ -1,0 +1,19 @@
+[build]
+  publish = "build"
+  command = "react-app-rewired build"
+  environment = { GENERATE_SOURCEMAP = "false", REACT_APP_DISCORD_ID = "412593783696261121", REACT_APP_SITE_URL = "https://dash.kaelbot.xyz", REACT_APP_API_URL = "https://api.kaelbot.xyz" }
+
+[[plugins]]
+  package = "netlify-plugin-subfont"
+
+[[plugins]]
+  package = "netlify-plugin-minify-html"
+
+[[plugins]]
+  package = "netlify-plugin-image-optim"
+
+[[plugins]]
+  package = "netlify-plugin-inline-source"
+
+[[plugins]]
+  package = "netlify-plugin-inline-critical-css"
