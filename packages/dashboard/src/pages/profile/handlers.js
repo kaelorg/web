@@ -9,10 +9,13 @@ const schema = Yup.object().shape({
 
 export async function handleSubmit(
   dispatch,
-  { bio, background, favColor },
+  { biography, background, favorite_color },
   { setHasChanged },
 ) {
-  await schema.validate({ bio, background, favColor }, { abortEarly: false });
+  await schema.validate(
+    { biography, background, favorite_color },
+    { abortEarly: false },
+  );
 
   if (background) {
     const data = new FormData();
@@ -27,8 +30,10 @@ export async function handleSubmit(
     background = link;
   }
 
-  await api.put('users/@me/profile', { bio, background, favColor }).then(() => {
-    setHasChanged(false);
-    dispatch(actions.refreshUser());
-  });
+  await api
+    .put('users/@me/profile', { biography, background, favorite_color })
+    .then(() => {
+      setHasChanged(false);
+      dispatch(actions.refreshUser());
+    });
 }

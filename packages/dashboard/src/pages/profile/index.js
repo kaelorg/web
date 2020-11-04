@@ -63,7 +63,7 @@ const GeneralPage = () => {
             </p>
 
             <div style={{ marginTop: '10px', maxWidth: '800px' }}>
-              <TextArea name="bio" />
+              <TextArea name="biography" />
             </div>
           </FormSection>
 
@@ -74,7 +74,7 @@ const GeneralPage = () => {
               social.
             </p>
 
-            <ColorPicker name="favColor" />
+            <ColorPicker name="favorite_color" />
           </FormSection>
 
           <FormSection>

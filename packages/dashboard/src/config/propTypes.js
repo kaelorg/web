@@ -41,7 +41,7 @@ export const guildProps = PropTypes.shape({
     }),
     count: PropTypes.shape({
       text: PropTypes.string,
-      model: PropTypes.string,
+      type: PropTypes.string,
       channel: PropTypes.string,
     }),
     welcome: PropTypes.shape({
@@ -61,13 +61,13 @@ export const guildProps = PropTypes.shape({
       }),
     }),
     harrypotter: PropTypes.shape({
-      housePoints: PropTypes.shape({
+      house_points: PropTypes.shape({
         slytherin: PropTypes.number,
         ravenclaw: PropTypes.number,
         hufflepuff: PropTypes.number,
         gryffindor: PropTypes.number,
       }),
-      houseRoles: PropTypes.shape({
+      house_roles: PropTypes.shape({
         slytherin: PropTypes.string,
         ravenclaw: PropTypes.string,
         hufflepuff: PropTypes.string,
@@ -100,7 +100,7 @@ export const guildDefaultProps = {
     },
     count: {
       text: '',
-      model: '',
+      type: '',
       channel: '',
     },
     welcome: {
@@ -119,18 +119,18 @@ export const guildDefaultProps = {
         channel: '',
       },
     },
-    harrypotter: {
-      housePoints: {
-        slytherin: 0,
-        ravenclaw: 0,
-        hufflepuff: 0,
-        gryffindor: 0,
-      },
-      houseRoles: {
+    harry_potter: {
+      house_roles: {
         slytherin: '',
         ravenclaw: '',
         hufflepuff: '',
         gryffindor: '',
+      },
+      house_points: {
+        slytherin: 0,
+        ravenclaw: 0,
+        hufflepuff: 0,
+        gryffindor: 0,
       },
     },
   },
