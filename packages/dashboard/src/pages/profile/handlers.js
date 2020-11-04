@@ -4,7 +4,7 @@ import api, { imgurApi } from '@app/services/api';
 import { actions } from '@app/store/modules/user';
 
 const schema = Yup.object().shape({
-  bio: Yup.string().required().min(1).max(130),
+  biography: Yup.string().required().min(1).max(130),
 });
 
 export async function handleSubmit(
