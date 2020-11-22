@@ -17,7 +17,7 @@ const LayoutComponent = ({ private: privateRoute, children }) => {
     return <></>;
   }
 
-  return children;
+  return <>{children}</>;
 };
 
 LayoutComponent.propTypes = {
@@ -25,7 +25,7 @@ LayoutComponent.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-LayoutComponent.defautProps = {
+LayoutComponent.defaultProps = {
   private: false,
 };
 

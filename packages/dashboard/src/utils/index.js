@@ -51,6 +51,6 @@ export function reduceString(str, maxLength = 20) {
   return `${str.slice(0, maxLength)}${str.length > maxLength ? '...' : ''}`;
 }
 
-export function createUrl(uri, ...paths) {
+export function createUrl(uri = '', ...paths) {
   return urlJoin(uri, ...paths.flatMap(path => [].concat(path)));
 }
