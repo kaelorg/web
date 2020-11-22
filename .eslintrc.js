@@ -1,11 +1,14 @@
 module.exports = {
   root: true,
   extends: '@hitechline/eslint-config-web',
-  settings: {
-    'import/parsers': {
-      '@typescript-eslint/parser': ['.ts', '.tsx'],
+  overrides: [
+    {
+      files: ['*.js', '*.jsx'],
+      rules: {
+        '@typescript-eslint/*': 'off',
+      },
     },
-  },
+  ],
   rules: {
     camelcase: 'off',
   },
