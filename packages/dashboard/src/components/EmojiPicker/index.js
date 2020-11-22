@@ -69,7 +69,9 @@ EmojiPickerComponent.propTypes = {
 
 EmojiPickerComponent.defaultProps = {
   style: {},
-  handleSelect: () => {},
+  handleSelect: () => {
+    // void
+  },
 };
 
 export default EmojiPickerComponent;

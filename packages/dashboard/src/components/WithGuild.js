@@ -1,4 +1,4 @@
-/* eslint-disable react-hooks/rules-of-hooks */
+/* eslint-disable react/display-name, react-hooks/rules-of-hooks */
 
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';

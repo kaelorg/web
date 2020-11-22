@@ -130,7 +130,9 @@ FormComponent.propTypes = {
 
 FormComponent.defaultProps = {
   saveComponent: true,
-  getFormRef: () => {},
+  getFormRef: () => {
+    // void
+  },
 };
 
 export default React.memo(FormComponent);

@@ -7,8 +7,12 @@ import api from '../services/api';
 // Context
 export const GuildContext = createContext({
   guild: guildDefaultProps,
-  getGuild: () => {},
-  refresh: () => {},
+  getGuild: () => {
+    // void
+  },
+  refresh: () => {
+    // void
+  },
 });
 
 export const GuildProvider = ({ history, children }) => {

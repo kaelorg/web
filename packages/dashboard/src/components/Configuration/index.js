@@ -134,8 +134,12 @@ ConfigurationComponent.defaultProps = {
   modalTitle: '',
   initialData: {},
   switchChecked: false,
-  handleSubmit: () => {},
-  handleSwitch: () => {},
+  handleSubmit: () => {
+    // void
+  },
+  handleSwitch: () => {
+    // void
+  },
 };
 
 export default React.memo(ConfigurationComponent);
