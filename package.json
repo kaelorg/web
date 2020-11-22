@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "fix": "yarn lint:fix && yarn prettier:fix",
-    "clean": "lerna exec --parallel -- rimraf dist node_modules/.cache",
+    "build": "lerna exec --parallel -- yarn build",
     "lint": "eslint ./ --ext js,ts",
     "lint:fix": "eslint ./ --ext js,ts --fix",
     "prettier": "prettier --check ./**/*.{js,ts}",
