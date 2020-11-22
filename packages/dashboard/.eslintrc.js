@@ -33,6 +33,14 @@ module.exports = {
       },
     },
   },
+  overrides: [
+    {
+      files: ['*.js', '*.jsx'],
+      rules: {
+        '@typescript-eslint/*': 'off',
+      },
+    },
+  ],
   rules: {
     'prettier/prettier': 'error',
     'consistent-return': 'off',
