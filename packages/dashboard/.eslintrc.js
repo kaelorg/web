@@ -35,7 +35,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['*.js', '*.jsx'],
+      files: ['.js', '.jsx'],
       rules: {
         '@typescript-eslint/*': 'off',
       },
