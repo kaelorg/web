@@ -29,7 +29,7 @@ const App = () => {
       <PersistGate persistor={persistor}>
         <ThemeProvider theme={colors}>
           <GuildProvider history={history}>
-            <Router history={history}>
+            <Router>
               <Routes />
             </Router>
           </GuildProvider>
