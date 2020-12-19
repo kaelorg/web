@@ -16,14 +16,17 @@
     "node": ">=12"
   },
   "dependencies": {
+    "@tailwindcss/ui": "^0.7.2",
     "@zeit/next-stylus": "1.0.1",
     "axios": "0.20.0",
     "next": "10.0.3",
+    "postcss-nesting": "^7.0.1",
     "raw-loader": "4.0.2",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-markdown": "5.0.3",
     "stylus": "0.54.8",
+    "tailwindcss": "^2.0.2",
     "url-join": "4.0.1"
   },
   "devDependencies": {
@@ -33,6 +36,7 @@
     "imagemin-mozjpeg": "9.0.0",
     "imagemin-optipng": "8.0.0",
     "next-compose-plugins": "2.2.1",
-    "next-optimized-images": "2.6.2"
+    "next-optimized-images": "2.6.2",
+    "postcss-flexbugs-fixes": "^5.0.2"
   }
 }
