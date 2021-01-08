@@ -1,0 +1,48 @@
+:root {
+  --box-spacing: 20px;
+  --box-max-width: 1024px;
+
+  --main-transparency: 10%;
+
+  --main-border-radius: 3px;
+  --main-bigger-border-radius: 6px;
+
+  --main-box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.19);
+  --main-bottom-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.19);
+
+  /* Colors */
+
+  --color-white: #fefefe;
+  --color-background: #191820;
+  --color-purple-dark: #42007f;
+}
+
+@media (min-width: 1536px) {
+  :root {
+    --box-spacing: 60px;
+  }
+}
+
+@media (min-width: 1280px) {
+  :root {
+    --box-spacing: 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --box-spacing: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  :root {
+    --box-spacing: 35px;
+  }
+}
+
+@media (min-width: 640px) {
+  :root {
+    --box-spacing: 30px;
+  }
+}

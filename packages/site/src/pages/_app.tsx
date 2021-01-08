@@ -1,25 +1,20 @@
 import App from 'next/app';
-import Head from 'next/head';
 import React from 'react';
 
-import Layout from '@layout';
+import Head from '@components/common/Head';
+import { Provider as UIProvider } from '@components/layout/UI';
 
-import '@styles/global.styl';
+import '@styles/global.css';
 
 class MyApp extends App {
   render(): JSX.Element {
     const { Component, pageProps } = this.props;
 
     return (
-      <Layout>
-        <Head>
-          <meta charSet="utf-8" />
-          <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-        </Head>
-
+      <UIProvider>
+        <Head />
         <Component {...pageProps} />
-      </Layout>
+      </UIProvider>
     );
   }
 }

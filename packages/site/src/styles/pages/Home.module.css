@@ -1,0 +1,8 @@
+.absoluteLogoContainer {
+  transform: rotate(4deg) translateY(-40px);
+
+  & > img {
+    width: 120%;
+    height: auto;
+  }
+}
