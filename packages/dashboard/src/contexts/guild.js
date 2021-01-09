@@ -3,6 +3,7 @@ import React, { createContext, useState, useContext } from 'react';
 
 import { guildDefaultProps } from '../config/propTypes';
 import api from '../services/api';
+import history from '../services/history';
 
 // Context
 export const GuildContext = createContext({
@@ -15,7 +16,7 @@ export const GuildContext = createContext({
   },
 });
 
-export const GuildProvider = ({ history, children }) => {
+export const GuildProvider = ({ children }) => {
   const [guild, setGuild] = useState(guildDefaultProps);
 
   async function getGuild(id, options = { canManage: true }) {
@@ -46,6 +47,5 @@ export const GuildProvider = ({ history, children }) => {
 export const useGuild = () => useContext(GuildContext);
 
 GuildProvider.propTypes = {
-  history: PropTypes.shape({ push: PropTypes.func }).isRequired,
   children: PropTypes.node.isRequired,
 };

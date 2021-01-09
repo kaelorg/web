@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Provider } from 'react-redux';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { Router } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import { REHYDRATE } from 'redux-persist';
 import { PersistGate } from 'redux-persist/integration/react';
@@ -28,8 +28,8 @@ const App = () => {
     <Provider store={store}>
       <PersistGate persistor={persistor}>
         <ThemeProvider theme={colors}>
-          <GuildProvider history={history}>
-            <Router>
+          <GuildProvider>
+            <Router history={history}>
               <Routes />
             </Router>
           </GuildProvider>
