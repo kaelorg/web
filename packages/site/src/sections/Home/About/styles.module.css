@@ -1,0 +1,21 @@
+.container {
+  background-color: var(--color-background-dark-weak);
+}
+
+.title {
+  font-size: 3rem;
+  letter-spacing: 2.18px;
+}
+
+.about {
+  @apply flex flex-wrap justify-between;
+
+  margin-top: -5px;
+  font-weight: 300;
+
+  & > a {
+    opacity: 0.8;
+    margin: 5px 0;
+    font-size: 2rem;
+  }
+}
