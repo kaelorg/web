@@ -1,38 +1,43 @@
-import NextHead from 'next/head';
+import Head from 'next/head';
 import { useRouter } from 'next/router';
 import React from 'react';
-import urlJoin from 'url-join';
 
-const makeBaseUrl = (base: string) => {
-  return !/^(https|http):\/\/+/.test(base)
-    ? urlJoin('https://kaelbot.xyz', base)
-    : base;
-};
+import makeUrl from '@utils/makeUrl';
 
-const SEO: React.FC<Props> = ({
-  url = '',
-  title = 'Kael | The best discord fun bot',
-  image = '/img/meta-image.png',
-  description = 'Kael a Brazilian bot designed for Discord server management.',
+const SEO = ({
+  url,
   children,
-}) => {
+  image = '/img/meta.png',
+  title = 'Kael, The best discord fun bot',
+  description = 'Kael a Brazilian bot designed for Discord server management.',
+}: PropsWithChildren<Props>) => {
   const router = useRouter();
 
-  const metaImage = makeBaseUrl(image);
-  const canonical = makeBaseUrl(url || router.pathname);
+  const metaImage = makeUrl(image);
+  const canonical = makeUrl(url || router.pathname);
 
   return (
-    <NextHead>
+    <Head>
       <title>{title}</title>
 
       <link rel="canonical" href={canonical} />
 
-      <link itemProp="url" href="https://kaelbot.xyz" />
+      {/* <link rel="icon" href="/favicon.svg" />
+      <link rel="shortcut icon" href="/favicon.svg" /> */}
+
+      <link itemProp="url" href="https://kaelbot.com" />
+
       <meta itemProp="name" content={title} />
       <meta itemProp="description" content={description} />
 
       <meta name="image" content={metaImage} />
       <meta name="description" content={description} />
+
+      {/* OpenGraph */}
+
+      <meta property="og:type" content="website" />
+      <meta property="og:locale" content="pt_BR" />
+      <meta property="og:site_name" content="Kael Bot" />
 
       <meta property="og:title" content={title} />
       <meta property="og:url" content={canonical} />
@@ -44,9 +49,7 @@ const SEO: React.FC<Props> = ({
       <meta property="og:image" content={metaImage} />
       <meta property="og:image:secure_url" content={metaImage} />
 
-      <meta name="twitter:site" content="@hitechline_" />
-      <meta name="twitter:creator" content="@hitechline_" />
-      <meta name="twitter:card" content="summary_large_image" />
+      {/* Twitter */}
 
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
@@ -54,11 +57,12 @@ const SEO: React.FC<Props> = ({
       <meta name="twitter:image" content={metaImage} />
       <meta name="twitter:image:src" content={metaImage} />
 
-      <link rel="icon" href="/favicon.png" />
-      <link rel="shortcut icon" href="/favicon.png" />
+      <meta name="twitter:site" content="@BotKael" />
+      <meta name="twitter:creator" content="@BotKael" />
+      <meta name="twitter:card" content="summary_large_image" />
 
       {children}
-    </NextHead>
+    </Head>
   );
 };
 

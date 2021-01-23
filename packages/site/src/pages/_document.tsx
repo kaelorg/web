@@ -32,10 +32,6 @@ class MyDocument extends Document {
           <meta name="HandheldFriendly" content="True" />
           <meta name="referrer" content="no-referrer-when-downgrade" />
 
-          <meta property="og:locale" content="pt_BR" />
-          <meta property="og:type" content="website" />
-          <meta property="og:site_name" content="Kael Bot" />
-
           <link
             href="https://fonts.googleapis.com/css?family=Righteous|Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"
             rel="stylesheet"
