@@ -9,21 +9,18 @@ const sitePath = resolve('.', 'packages', 'site');
 async function run() {
   const PROJECT_NAME = process.env.PROJECT_NAME;
 
-  console.log({
-    project: PROJECT_NAME,
-  });
+  switch (PROJECT_NAME) {
+    case 'site':
+      await execPromise('yarn next build', {
+        cwd: sitePath,
+      });
 
-  if (PROJECT_NAME !== 'site') {
-    return;
+      await execPromise('yarn next export', {
+        cwd: sitePath,
+      });
+      break;
+    default:
   }
-
-  await execPromise('yarn next build', {
-    cwd: sitePath,
-  });
-
-  await execPromise('yarn next export', {
-    cwd: sitePath,
-  });
 }
 
 run();
