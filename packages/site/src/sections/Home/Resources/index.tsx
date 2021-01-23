@@ -1,3 +1,4 @@
+import cn from 'classnames';
 import React, { isValidElement } from 'react';
 
 import Divider from '@components/ui/Divider';
@@ -14,8 +15,13 @@ const Resources = () => (
       <Divider margin="20px" />
 
       <div className={styles.resources}>
-        {resources.map(({ key, title, image, element, description }) => (
-          <div key={key} className={styles.resource}>
+        {resources.map(({ key, align, title, image, element, description }) => (
+          <div
+            key={key}
+            className={cn(styles.resource, {
+              'items-center': Boolean(align),
+            })}
+          >
             {element ?? <img src={image} alt="Resource" />}
 
             <div style={{ maxWidth: '450px' }}>

@@ -5,6 +5,7 @@ interface Resource {
   description: string;
   title: string | JSX.Element;
   image?: string;
+  align?: boolean;
   element?: JSX.Element;
 }
 
@@ -42,6 +43,7 @@ const resources: Resource[] = [
     ),
   },
   {
+    align: true,
     key: 'vanity',
     title: 'Vanity',
     description:
