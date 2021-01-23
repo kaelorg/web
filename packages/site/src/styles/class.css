@@ -9,3 +9,17 @@
   padding-left: var(--box-spacing);
   padding-right: var(--box-spacing);
 }
+
+.text-gradient {
+  background-clip: text;
+  background-size: 100%;
+  background-color: var(--colors-white);
+
+  -ms-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+
+  -ms-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
