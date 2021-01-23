@@ -7,9 +7,12 @@
     "noEmit": true,
     "skipLibCheck": true,
     "paths": {
-      "@api/*": ["api/*"],
-      "@config/*": ["config/*"],
+      "@/*": ["*"],
+      "@utils/*": ["utils/*"],
       "@styles/*": ["styles/*"],
+      "@services/*": ["services/*"],
+      "@fixtures/*": ["fixtures/*"],
+      "@sections/*": ["sections/*"],
       "@layout": ["components/Layout"],
       "@components/*": ["components/*"]
     }

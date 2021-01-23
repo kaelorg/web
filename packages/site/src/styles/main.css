@@ -1,13 +1,13 @@
 body {
   color: var(--color-white);
-  background-color: var(--color-background);
+  background-color: var(--color-background-dark);
 }
 
 body,
 input,
 button,
 textarea {
-  font-family: Roboto, -apple-system, sans-serif;
+  font-family: unset, -apple-system, sans-serif;
 }
 
 #content {
