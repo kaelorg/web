@@ -1,5 +1,5 @@
 [build]
-  command = "node build.js"
+  command = "yarn install --production=false && node build.js"
   environment = { GENERATE_SOURCEMAP = "false", NETLIFY_USE_YARN = "true", NODE_ENV = "production" }
 
 [[plugins]]
