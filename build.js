@@ -7,8 +7,10 @@ const execPromise = promisify(defaultExec);
 const sitePath = resolve('.', 'packages', 'site');
 
 async function run() {
+  const PROJECT_NAME = process.env.PROJECT_NAME;
+
   console.log({
-    project: process.env.PROJECT_NAME,
+    project: PROJECT_NAME,
   });
 
   if (PROJECT_NAME !== 'site') {
