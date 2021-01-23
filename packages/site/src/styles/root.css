@@ -12,9 +12,19 @@
 
   /* Colors */
 
+  --color-background-dark: #0e0d12;
+  --color-background-dark-weak: #191820;
+
+  --color-background-lighten: #1f1e28;
+  --color-background-lighten-weak: #1e1d27;
+
+  --color-black: #000000;
+
   --color-white: #fefefe;
-  --color-background: #191820;
+  --color-white-strong: #e0e0e0;
+
   --color-purple-dark: #42007f;
+  --color-purple-light: #585470;
 }
 
 @media (min-width: 1536px) {
