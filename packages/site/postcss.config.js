@@ -3,6 +3,19 @@ module.exports = {
     'tailwindcss',
     'postcss-nesting',
     'postcss-flexbugs-fixes',
-    'postcss-color-mod-function',
+    [
+      'postcss-preset-env',
+      {
+        autoprefixer: {
+          flexbox: 'no-2009',
+        },
+        stage: 3,
+        features: {
+          'color-mod-function': {
+            unresolved: 'warn',
+          },
+        },
+      },
+    ],
   ],
 };
