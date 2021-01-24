@@ -1,5 +1,6 @@
 body {
-  color: var(--color-white);
+  @apply text-white;
+
   background-color: var(--color-background-dark);
 }
 
@@ -15,9 +16,5 @@ textarea {
 }
 
 #layout {
-  display: flex;
-  width: 100%;
-  min-height: 100vh;
-  flex-direction: column;
-  justify-content: space-between;
+  @apply flex w-full min-h-screen flex-col justify-between;
 }

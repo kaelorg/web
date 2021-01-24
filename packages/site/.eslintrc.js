@@ -1,9 +1,14 @@
 module.exports = {
   extends: '@hitechline/eslint-config-web',
   rules: {
-    '@typescript-eslint/no-unused-vars': 'off',
+    'no-unused-vars': 'off',
+    'no-use-before-define': 'off',
+
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
+
+    '@typescript-eslint/no-unused-vars': ['error'],
+    '@typescript-eslint/no-use-before-define': ['error'],
 
     'import-helpers/order-imports': [
       'warn',

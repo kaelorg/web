@@ -1,3 +1,4 @@
+import { Colors } from '@kaelbot/constants';
 import Document, {
   Html,
   Head,
@@ -26,7 +27,7 @@ class MyDocument extends Document {
           />
 
           <meta name="author" content="Kaeltec Team" />
-          <meta name="theme-color" content="#f23859" />
+          <meta name="theme-color" content={Colors.Favorite} />
 
           <meta name="MobileOptimized" content="320" />
           <meta name="HandheldFriendly" content="True" />

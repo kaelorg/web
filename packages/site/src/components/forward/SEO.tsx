@@ -22,8 +22,8 @@ const SEO = ({
 
       <link rel="canonical" href={canonical} />
 
-      {/* <link rel="icon" href="/favicon.svg" />
-      <link rel="shortcut icon" href="/favicon.svg" /> */}
+      <link rel="icon" href="/favicon.ico" />
+      <link rel="shortcut icon" href="/favicon.ico" />
 
       <link itemProp="url" href="https://kaelbot.com" />
 
