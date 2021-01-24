@@ -1,5 +1,87 @@
+.container {
+  @apply sticky top-0 z-50 shadow;
+
+  backdrop-filter: saturate(180%) blur(20px);
+  background-color: color-mod(var(--color-background-dark) a(0.4));
+}
+
+/* Responsive */
+
+.responsive {
+  @apply flex flex-grow justify-end;
+}
+
+.responsive svg {
+  @apply w-16 h-auto;
+}
+
+/* Navigation */
+
+.navigation {
+  @apply flex-col items-center mt-4 w-full text-center hidden;
+}
+
+.navigation:global(.open) {
+  @apply flex;
+}
+
+.navigation nav,
+.navigation nav a {
+  @apply w-full;
+}
+
+.navigation nav {
+  @apply flex flex-col;
+}
+
+.navigation nav a {
+  @apply py-6;
+}
+
+/* */
+
 .priceButton {
-  @apply py-4 px-16 rounded-full;
+  @apply py-4 px-16 mt-4 rounded-full;
 
   background-color: var(--color-purple-dark);
+}
+
+/* Responsive */
+
+@screen lg {
+  .container {
+    @apply shadow-none;
+  }
+
+  .responsive {
+    @apply hidden;
+  }
+
+  .navigation {
+    @apply flex;
+  }
+
+  .navigation,
+  .priceButton {
+    @apply mt-0;
+  }
+
+  .navigation,
+  .navigation nav {
+    @apply flex-row;
+  }
+
+  .navigation,
+  .navigation nav,
+  .navigation nav a {
+    @apply w-auto;
+  }
+
+  .navigation nav a {
+    @apply mr-8 py-0;
+  }
+
+  .navigation nav a:hover {
+    @apply underline;
+  }
 }

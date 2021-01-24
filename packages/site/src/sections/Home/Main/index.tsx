@@ -4,7 +4,7 @@ import styles from './styles.module.css';
 
 const Main = () => (
   <section id="main">
-    <div className="main-container flex relative items-center">
+    <div className="main-container flex relative items-center flex-col lg:flex-row">
       <aside className={styles.aside}>
         <h3>O BOT QUE VAI QUEBRAR OS PADRÕES</h3>
 

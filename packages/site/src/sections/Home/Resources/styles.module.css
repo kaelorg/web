@@ -20,11 +20,11 @@
 }
 
 .resource {
-  @apply flex justify-between;
+  @apply flex flex-col justify-between items-center;
 }
 
 .resource img {
-  @apply w-full h-auto;
+  @apply w-full h-auto my-8;
 
   max-width: 350px;
 }
@@ -41,4 +41,16 @@
 
   font-size: 2.2rem;
   letter-spacing: 1.3px;
+}
+
+/* Responsive */
+
+@screen lg {
+  .resource {
+    @apply flex-row;
+  }
+
+  .resource :global(.content) {
+    max-width: 450px;
+  }
 }

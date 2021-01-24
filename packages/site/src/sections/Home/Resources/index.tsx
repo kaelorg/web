@@ -24,7 +24,7 @@ const Resources = () => (
           >
             {element ?? <img src={image} alt="Resource" />}
 
-            <div style={{ maxWidth: '450px' }}>
+            <div className="content">
               {isValidElement(title) ? (
                 title
               ) : (

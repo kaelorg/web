@@ -1,28 +1,38 @@
 .aside {
-  @apply w-full flex-shrink-0;
-
-  max-width: 530px;
-
-  & > h3 {
-    font-size: 2.2rem;
-    letter-spacing: 4.44px;
-  }
-
-  & > h5 {
-    margin-top: 20px;
-
-    font-size: 1.8rem;
-    color: var(--color-purple-light);
-  }
-
-  & > h1 {
-    max-width: 340px;
-    margin-top: 20px;
-    letter-spacing: 2.39px;
-
-    background-image: linear-gradient(0deg, #ab10fc 0%, #eb798d 100%);
-  }
+  @apply w-full flex-shrink-0 text-center;
 }
+
+.aside h3 {
+  font-size: 2.2rem;
+  letter-spacing: 4.44px;
+}
+
+.aside h5 {
+  font-size: 1.8rem;
+  color: var(--color-purple-light);
+}
+
+.aside h1 {
+  @apply my-8;
+
+  letter-spacing: 2.39px;
+  background-image: linear-gradient(0deg, #ab10fc 0%, #eb798d 100%);
+}
+
+/* Brand */
+
+.logoContainer {
+  @apply mb-8;
+
+  order: -1;
+  max-width: 200px;
+}
+
+.logoContainer img {
+  @apply w-full h-auto;
+}
+
+/* Button */
 
 .button {
   @apply py-5 px-16 font-bold rounded-full;
@@ -33,14 +43,26 @@
   background-color: var(--color-white-strong);
 }
 
-.logoContainer {
-  max-width: 520px;
-  margin-top: -20px;
+/* Responsive */
 
-  z-index: -1;
-  transform: rotate(8deg);
+@screen lg {
+  .aside {
+    @apply text-left mr-8;
 
-  & > img {
-    @apply w-full h-auto;
+    max-width: 530px;
+  }
+
+  .aside h1 {
+    max-width: 340px;
+  }
+
+  .logoContainer {
+    @apply order-none mb-0;
+
+    max-width: 520px;
+    margin-top: -20px;
+
+    z-index: -1;
+    transform: rotate(8deg);
   }
 }

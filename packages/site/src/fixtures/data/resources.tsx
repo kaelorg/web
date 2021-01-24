@@ -17,7 +17,7 @@ const resources: Resource[] = [
       'Um sistema avançado de economia para você usar como quiser em seu servidor.',
     element: (
       <div
-        className="relative h-full mr-36"
+        className="relative h-full mr-36 mb-10 lg:mb-0"
         style={{
           maxWidth: '350px',
         }}
@@ -52,9 +52,7 @@ const resources: Resource[] = [
       <img
         src="/img/resources/vanity.svg"
         alt="vanity"
-        style={{
-          order: 1,
-        }}
+        className="lg:order-1"
       />
     ),
   },
