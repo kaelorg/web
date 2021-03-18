@@ -19,17 +19,17 @@
     "webpack": "^5.0.0-beta.30"
   },
   "dependencies": {
-    "@kaelbot/constants": "^1.0.5",
+    "@kaelbot/constants": "1.0.5",
     "@tailwindcss/ui": "0.7.2",
     "axios": "0.21.1",
-    "classnames": "^2.2.6",
+    "classnames": "2.2.6",
     "next": "10.0.3",
     "postcss-nesting": "7.0.1",
-    "postcss-preset-env": "^6.7.0",
+    "postcss-preset-env": "6.7.0",
     "raw-loader": "4.0.2",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "react-icons": "^4.1.0",
+    "react-icons": "4.1.0",
     "react-markdown": "5.0.3",
     "tailwindcss": "1.9.6",
     "url-join": "4.0.1"
@@ -37,7 +37,7 @@
   "devDependencies": {
     "@hitechline/eslint-config-web": "1.1.0",
     "@next/bundle-analyzer": "10.0.3",
-    "@types/classnames": "^2.2.11",
+    "@types/classnames": "2.2.11",
     "@types/url-join": "4.0.0",
     "@zeit/next-source-maps": "0.0.3",
     "imagemin-mozjpeg": "9.0.0",
