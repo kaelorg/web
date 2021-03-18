@@ -23,7 +23,7 @@
     "@tailwindcss/ui": "0.7.2",
     "axios": "0.21.1",
     "classnames": "2.2.6",
-    "next": "10.0.3",
+    "next": "10.0.9",
     "postcss-nesting": "7.0.1",
     "postcss-preset-env": "6.7.0",
     "raw-loader": "4.0.2",
@@ -36,7 +36,7 @@
   },
   "devDependencies": {
     "@hitechline/eslint-config-web": "1.1.4",
-    "@next/bundle-analyzer": "10.0.3",
+    "@next/bundle-analyzer": "10.0.9",
     "@types/classnames": "2.2.11",
     "@types/url-join": "4.0.0",
     "@zeit/next-source-maps": "0.0.3",
