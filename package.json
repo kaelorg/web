@@ -24,7 +24,7 @@
     "@hitechline/eslint-config-web": "1.1.4",
     "@types/node": "14.14.35",
     "@types/react": "17.0.3",
-    "@types/react-dom": "17.0.0",
+    "@types/react-dom": "17.0.3",
     "eslint": "7.22.0",
     "lerna": "3.22.1",
     "prettier": "2.2.1",
