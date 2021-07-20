@@ -38,7 +38,7 @@
     "@hitechline/eslint-config-web": "1.1.4",
     "@next/bundle-analyzer": "10.0.9",
     "@types/classnames": "2.2.11",
-    "@types/url-join": "4.0.0",
+    "@types/url-join": "4.0.1",
     "@zeit/next-source-maps": "0.0.3",
     "imagemin-mozjpeg": "9.0.0",
     "imagemin-optipng": "8.0.0",
